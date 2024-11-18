@@ -75,7 +75,7 @@ Memanfaatkan TextEditingController untuk pengelolaan data input.
 Modularisasi yang baik antara input (FormData) dan tampilan (TampilData).
 Penggunaan Navigator mempermudah pengelolaan alur perpindahan data antar halaman.
 
-#Screenshots
+# Screenshots
 
 ![image](https://github.com/user-attachments/assets/ad605df6-9d49-4554-aaf1-f8e1e888e252)
 

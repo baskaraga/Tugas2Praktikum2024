@@ -11,31 +11,31 @@ NIM
 Tahun Lahir
 Form ini menggunakan TextEditingController untuk mengelola data dari input pengguna. Setiap TextField memiliki controller masing-masing:
 
-
+```
 final _namaController = TextEditingController();
 final _nimController = TextEditingController();
 final _tahunController = TextEditingController();
-
+```
 Ketika pengguna mengetikkan data, controller akan menyimpan nilai tersebut. Saat tombol "Simpan" ditekan, data dari controller diambil menggunakan properti .text:
-
+```
 String nama = _namaController.text;
 String nim = _nimController.text;
 int tahun = int.parse(_tahunController.text);
-
+```
 Setelah data berhasil diambil, Navigator.push digunakan untuk mengirimkan data ini ke halaman TampilData:
-
+```
 Navigator.of(context).push(
   MaterialPageRoute(
     builder: (context) =>
       TampilData(nama: nama, nim: nim, tahun: tahun),
   ),
 );
-
+```
 Halaman Tampilan Data (TampilData)
 Halaman ini bertugas menerima data yang dikirim dari FormData dan menampilkannya.
 
 Menerima Data Data dikirimkan dari FormData ke TampilData melalui konstruktor dengan parameter wajib nama, nim, dan tahun:
-
+```
 class TampilData extends StatelessWidget {
   final String nama;
   final String nim;
@@ -48,9 +48,9 @@ class TampilData extends StatelessWidget {
     required this.tahun,
   }) : super(key: key);
 }
-
+```
 Mengolah Data Setelah menerima data, umur pengguna dihitung dengan mengurangi tahun saat ini dengan tahun:
-
+```
 final int umur = DateTime.now().year - tahun;
 Menampilkan Data Data yang telah diolah ditampilkan dalam Text widget:
 
@@ -64,7 +64,7 @@ return Scaffold(
     ),
   ),
 );
-
+```
 
 Alur Kerja
 Pengguna mengisi Nama, NIM, dan Tahun Lahir di halaman FormData.

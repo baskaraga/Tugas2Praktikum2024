@@ -76,6 +76,7 @@ Modularisasi yang baik antara input (FormData) dan tampilan (TampilData).
 Penggunaan Navigator mempermudah pengelolaan alur perpindahan data antar halaman.
 
 #Screenshots
+
 ![image](https://github.com/user-attachments/assets/ad605df6-9d49-4554-aaf1-f8e1e888e252)
 
 ![image](https://github.com/user-attachments/assets/f6dd72f6-d34c-4adf-9174-8ebe6e59a435)
